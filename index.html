@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>ASSINGMENT 1</title>
+    </head>
+    <body>
+
+       <h1>Assingment 1</h1>
+
+
+
+        <script>
+
+            // 1. Write a program to print a array of five names in reverses order.
+
+            let names = ["rohit","rahul","sanika","sanu","ruch"]
+            for(let i=4;i>=0;i--)
+            {
+                console.log(names[i]);
+            }
+
+
+
+            //2. Create a array of country objects having name capital and population as properties.
+            //Print the countries whose population is less than 2000
+
+            let country = [
+                {
+                    capital:"delhi",
+                    population:800
+                },
+                {
+                    capital:"maharashtra",
+                    population:1999
+                },
+                {
+                    capital:"goa",
+                    population:2001
+                },
+                {
+                    capital:"raipur",
+                    population:3000
+                }
+
+            ]
+
+            for(let i=0;i<=3;i++)
+            {
+                if(country[i].population<=2000){
+                    console.log(country[i].capital);
+                }
+            }
+
+
+        </script>
+    </body>
+</html>
