@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSINGMENT 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+   <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .header{
+            height: 70px;
+            width: 100%;
+            background-color: gray;
+        }
+        .carousel{
+            width: 100%;
+            height: 800px;
+            background-color: red;
+            overflow:hidden;
+            position: relative;
+        }
+
+        .buttons{
+            width: 100%;
+            height: 70px;
+            /* background-color: black; */
+            position:absolute;
+            top:365px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right: 30px;
+
+        }
+        .move_buttons{
+            width: 70px;
+            height: 70px;
+            background-color: rgba(0,0,0,.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+            border-radius: 50px;
+            color: white;
+            
+        }
+
+        .slider{
+            height:800px;
+            background-color: green;
+            width: 700%;
+            display:flex;
+            margin-left: -100%;
+        }
+
+        .slider_child{
+            height:800px;
+            width:20%;
+            /* background-color: yellow; */
+            overflow: hidden;
+
+        }
+
+        img{
+            width:100%;
+        }
+
+        .indicator{
+            width: 100%;
+            height: 12px;
+            /* background-color: white; */
+            position: absolute;
+            bottom: 5%;
+            display:flex;
+            justify-content: center;
+            column-gap: 10px;
+        }
+
+        p{
+            width: 12px;
+            height: 12px;
+            background-color: white; 
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+
+    </header>
+  <section class="carousel">
+
+    <div class="buttons">
+
+        <div class="move_buttons" onclick="prevSlide()">
+            <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="move_buttons" onclick="nextSlide()">
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+
+        
+
+    </div>
+    <div class="indicator">
+          <p onclick="moveToSlide(1)"></p>
+          <p onclick="moveToSlide(2)"></p>
+          <p onclick="moveToSlide(3)"></p>
+          <p onclick="moveToSlide(4)"></p>
+          <p onclick="moveToSlide(5)"></p>
+    </div>
+
+    <div class="slider">
+
+        <div class="slider_child">
+            <img src="./images/pexels-eberhard-grossgasteiger-707344.jpg"width=1900px; height=800px/>
+       </div>
+        
+        <div class="slider_child">
+             <img src="./images/pexels-aarti-vijay-2693529.jpg" width=1900px; height=800px/>
+        </div>
+        <div class="slider_child">
+            <img src="./images/pexels-asad-photo-maldives-1591373.jpg"width=1900px; height=800px/>
+       </div>
+       <div class="slider_child">
+            <img src="./images/pexels-eberhard-grossgasteiger-707344.jpg"width=1900px; height=800px/>
+       </div>
+       <div class="slider_child">
+            <img src="./images/pexels-pixabay-235621.jpg"width=1900px; height=800px/>
+        </div>
+        <div class="slider_child">
+            <img src="./images/pexels-asad-photo-maldives-1591373.jpg"width=1900px; height=800px/>
+       </div>
+        <div class="slider_child">
+            <img src="./images/pexels-aarti-vijay-2693529.jpg"width=1900px; height=800px/>
+       </div>
+
+    </div>
+
+
+  </section>
+
+
+
+    <script src="./script2.js"></script>
+</body>
+</html>
